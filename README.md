@@ -33,7 +33,7 @@ For each triplet:
 1. *_speech.npz contains numpy arrays with FSQ speech token ids of dtype=np.int16 (see *codes/extract-speech-tokens.ipynb*) for the corresponding utterances
 1. *_text.npz contains numpy arrays with text character ids of dtype=np.int16 (see mapping in *codes/dataset.py*) for the corresponding utterances
 
-In our experiments we arranged data to npz files of reasonable size (check *data/* folder) due to some upload/download/read issues.
+In our experiments, for each dataset we arranged data into several npz files of reasonable size (check *data/* folder) due to some upload/download/read issues.
 
 For your reference, the pre-trained model in *ckpt/* folder [here](https://drive.google.com/drive/folders/1nqIFF29RK4cKe7xEbHuLcgIsCFvqwq4Z?usp=sharing) was trained on a single node with 8 V100. The folder also contains the training curve with the values of diffusion loss.
 
